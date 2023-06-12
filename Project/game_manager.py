@@ -37,6 +37,7 @@ class Score:
         if exists("score.txt"):
             with open("score.txt") as save:
                 self._highscore = save.read()
+        else: self._highscore = ""
 
     @property
     def score(self):
